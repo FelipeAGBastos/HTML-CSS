@@ -15,7 +15,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Menu */
 .menu {
     position: fixed;
     top: 0;
@@ -43,7 +42,6 @@ body {
 .menu a { color: #ccc; text-decoration: none; font-size: 14px; transition: 0.4s; }
 .menu a:hover { color: var(--primary); }
 
-/* HERO SCROLL EFFECT */
 .hero-scroll-container {
     height: 250vh;
     position: relative;
@@ -60,21 +58,20 @@ body {
     overflow: hidden;
 }
 
-/* AJUSTE PARA NÃO ESTOURAR O LOGO */
 .giant-logo-wrapper {
     position: absolute;
     z-index: 10;
     pointer-events: none;
     text-align: center;
-    width: 100%; /* Garante que respeite a largura da tela */
+    width: 100%; 
     transition: transform 0.1s ease-out, opacity 0.1s ease-out;
 }
 
 .giant-logo-wrapper h1 {
-    font-size: clamp(60px, 18vw, 280px); /* Reduzi o máximo para não vazar lateralmente */
+    font-size: clamp(60px, 18vw, 280px);
     font-weight: 900;
     color: var(--primary);
-    letter-spacing: -8px; /* Menos agressivo que -15px */
+    letter-spacing: -8px;
     margin-bottom: -5px;
     line-height: 1;
 }
@@ -100,19 +97,18 @@ body {
 
 .social-hero img { width: 35px; margin-left: 15px; filter: invert(1); transition: 0.3s; vertical-align: middle; }
 
-/* SOBRE MIM */
+
 .section { padding: 120px 20px; min-height: 100vh; }
 .container { max-width: 900px; margin: 0 auto; }
 .About-me-title { font-size: 42px; margin-bottom: 40px; color: var(--primary); text-align: center; }
 .about-me-container p { font-size: 19px; line-height: 1.8; margin-bottom: 25px; color: #ddd; text-align: justify; }
 
-/* PROJETOS */
 .projects-section {
     padding: 100px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #050505; /* Leve variação de preto para destacar */
+    background-color: #050505; 
 }
 
 .projects-header { width: 100%; margin-bottom: 60px; text-align: center; }
@@ -138,10 +134,8 @@ body {
 .project-card h2 { font-size: 16px; margin-bottom: 20px; color: #fff; font-weight: 600; min-height: 50px; }
 .project-card img { width: 100%; height: 220px; object-fit: cover; border-radius: 12px; }
 
-/* CONTATO */
 .contact { background: #000; padding: 100px 0; text-align: center; border-top: 1px solid var(--glass); }
 
-/* REVEAL ANIMATIONS */
 .reveal { opacity: 0; transform: translateY(30px); transition: 1.2s cubic-bezier(0.2, 1, 0.3, 1); }
 .reveal.active { opacity: 1; transform: translateY(0); }
 
